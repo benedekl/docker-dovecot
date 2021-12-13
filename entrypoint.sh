@@ -47,9 +47,9 @@ function serviceStart {
 #export RELAYHOST=${RELAYHOST:-""}
 
 export DB_HOST=${DB_HOST:-"postgres"}
-export DB_USER=${DB_USER:-"mailreader"}
+export DB_USER=${DB_USER:-"dovecot"}
 export DB_PASSWORD=${DB_PASSWORD:-""}
-export DB_DATABASE=${DB_DATABASE:-"mails"}
-export MAIL_SPOOL=${MAIL_SPOOL:-"/var/spool/dovecot"}
+export DB_DATABASE=${DB_DATABASE:-"postfix"}
+export MAIL_SPOOL=${MAIL_SPOOL:-"/home/vmail"}
 
 serviceStart
